@@ -1,0 +1,132 @@
+{
+  "Pathlib - Elements": [
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_001_Header1.png",
+      "celltype": "Header",
+      "css": "border: 3px solid #ED6A5A;width: 600px; height: auto; display:block",
+      "code": "from pathlib import Path\nmypath = Path(\"/usr/okapi/projects/plywood_gallery/README.md\")"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_002_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "mypath.anchor"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_003_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "str(mypath.parents[2])"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_004_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "str(mypath.parent)"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_005_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "str(mypath.absolute())"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_006_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "str(mypath.relative_to(mypath.parents[2]))"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_007_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "str(mypath.relative_to(mypath.parents[1]))"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_008_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "mypath.parts[-2]"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_009_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "mypath.name"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_010_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "mypath.stem"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-_Elements_011_NormalLong.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 600px; height: auto; display:block",
+      "code": "mypath.suffix"
+    }
+  ],
+  "Pathlib -  Further Functions": [
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_012_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"new_folder\"\npath.mkdir()"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_013_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"new_folder\"\npath.rmdir()"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_014_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"new_folder\"\nif path.exists():\n    print(\"File is there\")\nelse: \n    print(\"File is not there\")"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_015_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"gallery_assets_6_Pathlib\"\n\nfor p in path.iterdir():\n    print(p.name)"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_016_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"foo.txt\"\npath.touch()"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_017_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"foo.txt\"\npath.write_text(\"Hello World\")"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_018_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"foo.txt\"\nsize = path.stat().st_size\nprint(\"File size is {size} byte\")"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_019_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"foo.txt\"\ntext  = path.read_text()\nprint(text)"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_020_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"foo.txt\"\npath2 = Path.cwd() / \"bar.txt\"\npath.rename(path2)"
+    },
+    {
+      "image_path": "gallery_assets_6_Pathlib/Pathlib_-__Further_Functions_021_Normal.png",
+      "celltype": "Normal",
+      "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+      "code": "path = Path.cwd() / \"bar.txt\"\npath.unlink()"
+    }
+  ]
+}

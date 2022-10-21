@@ -1,0 +1,12 @@
+project_name: Plywood Gallery - Pathlib
+repository_url: https://github.com/kolibril13/plywood-gallery-pathlib
+user_content_version: 3.9.12 (Python, Pathlib)
+description: |
+  Cheat sheet gallery for pathlib
+favicon: icon.png
+preview_image: https://kolibril13.github.io/plywood-gallery-pathlib/preview_image.png
+gallery_parameters_path: gallery_assets_6_Pathlib/gallery_parameters.json
+
+
+
+
