@@ -1,6 +1,6 @@
 {
   "plywood_metadata": {
-    "plywood_gallery_core_version": "0.0.9"
+    "plywood_gallery_core_version": "0.0.10"
   },
   "plywood_content": {
     "Pathlib - Elements": [
@@ -100,34 +100,40 @@
         "image_path": "gallery_assets/Pathlib_-__Further_Functions_016_Normal.png",
         "celltype": "Normal",
         "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
-        "code": "path = Path.cwd() / \"foo.txt\"\npath.touch()"
+        "code": "path = Path.cwd() / \"gallery_assets\"\n\ninclude_text = \"Elements\"\nexclude_text = \"004\"\nsuffix = \".png\"\n\nfile_names = []\nfor subp in path.rglob(\"*\"): # using python assignment operator: x &= 3 equals x = x & 3\n    cond = True\n    cond &= include_text in subp.name # these conditions can be easily commented in and out.\n    cond &= exclude_text not in subp.name\n    cond &= (suffix == subp.suffix)\n    if cond is True:\n        file_names.append(subp)\nfile_names.sort()\nprint(*file_names, sep=\"\\n\")"
       },
       {
         "image_path": "gallery_assets/Pathlib_-__Further_Functions_017_Normal.png",
         "celltype": "Normal",
         "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
-        "code": "path = Path.cwd() / \"foo.txt\"\npath.write_text(\"Hello World\")"
+        "code": "path = Path.cwd() / \"foo.txt\"\npath.touch()"
       },
       {
         "image_path": "gallery_assets/Pathlib_-__Further_Functions_018_Normal.png",
         "celltype": "Normal",
         "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
-        "code": "path = Path.cwd() / \"foo.txt\"\nsize = path.stat().st_size\nprint(\"File size is {size} byte\")"
+        "code": "path = Path.cwd() / \"foo.txt\"\npath.write_text(\"Hello World\")"
       },
       {
         "image_path": "gallery_assets/Pathlib_-__Further_Functions_019_Normal.png",
         "celltype": "Normal",
         "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
-        "code": "path = Path.cwd() / \"foo.txt\"\ntext  = path.read_text()\nprint(text)"
+        "code": "path = Path.cwd() / \"foo.txt\"\nsize = path.stat().st_size\nprint(\"File size is {size} byte\")"
       },
       {
         "image_path": "gallery_assets/Pathlib_-__Further_Functions_020_Normal.png",
         "celltype": "Normal",
         "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
-        "code": "path = Path.cwd() / \"foo.txt\"\npath2 = Path.cwd() / \"bar.txt\"\npath.rename(path2)"
+        "code": "path = Path.cwd() / \"foo.txt\"\ntext  = path.read_text()\nprint(text)"
       },
       {
         "image_path": "gallery_assets/Pathlib_-__Further_Functions_021_Normal.png",
+        "celltype": "Normal",
+        "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
+        "code": "path = Path.cwd() / \"foo.txt\"\npath2 = Path.cwd() / \"bar.txt\"\npath.rename(path2)"
+      },
+      {
+        "image_path": "gallery_assets/Pathlib_-__Further_Functions_022_Normal.png",
         "celltype": "Normal",
         "css": "border: 3px solid #007AB8;width: 70px; height: auto;",
         "code": "path = Path.cwd() / \"bar.txt\"\npath.unlink()"
